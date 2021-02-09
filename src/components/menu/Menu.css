@@ -1,0 +1,93 @@
+.menu{
+    font-family: sans-serif;
+    overflow: hidden;
+    width: 100%;
+    margin: 0px;
+    position: relative;
+}
+
+.item {
+    border-bottom: 1px solid #18dcff;
+    overflow: hidden;
+    width: 100%;
+}
+
+/*.btn {
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: left;
+    display: block;
+    padding: 16px 20px;
+    background: #17c0eb;
+    color: white;
+    position: relative;
+    width: 70%;
+    border: 0px;
+    float: left;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #17c0eb;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.btn:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+	color: 	#333;
+}*/
+
+.smenu {
+    background-color: #333;
+    overflow: hidden;
+    display: none;
+	float: left;
+	width: 100%;
+}
+
+.smenu a {
+    display: block;
+    padding: 16px 26px;
+    color: white;
+    margin: 4px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.smenu a:hover {
+    transition:all 0.4s ease;
+    border-left: inset 7px #18dcff;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.btn-add {
+    font-family: sans-serif;
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    padding: 16px 0px;
+    margin: 5%;
+    border: 0px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.btn-add:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}

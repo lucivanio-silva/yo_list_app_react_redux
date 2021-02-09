@@ -1,0 +1,95 @@
+@import "https://fonts.googleapis.com/css?family=Titillium+Web:200";
+
+/* checkbox */
+input[type="checkbox"] { display: none; }
+
+/* checkbox 4 */
+.checkbox-4 { margin: 5px;}
+
+.checkbox-4 label { display: block;	cursor: pointer; margin-bottom: 0px;}
+
+.checkbox-4 label {
+	position: relative;
+	width: 28px; height: 28px;
+	border: 2px solid #ffffff;
+	-webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%;
+	-webkit-transition: 0.2s ease; -moz-transition: 0.2s ease; transition: 0.2s ease;
+	box-sizing:border-box; -moz-box-sizing:border-box;
+}
+
+.checkbox-4 label:after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 0px;
+	height: 8px;
+	top: 4px;
+	left: 3px;
+	background-color: #ffffff;
+	-webkit-transition: 0.1s 0.1s linear; -moz-transition: 0.1s 0.1s linear; transition: 0.1s 0.1s linear;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+}
+.checkbox-4 input[type="checkbox"]:checked ~ label:after {
+	width: 16px;
+	height: 8px;
+	top: 10px;
+	left: 1px;
+	transition-delay: 0s; -webkit-transition-delay: 0s; -moz-transition-delay: 0s;
+}
+.checkbox-4 label:before {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 0px;
+	height: 8px;
+	top: 10px;
+	left: 14px;
+	background-color: #ffffff;
+	-webkit-transition: 0.1s linear; -moz-transition: 0.1s linear; transition: 0.1s linear;
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+}
+.checkbox-4 input[type="checkbox"]:checked ~ label:before {
+	width: 24px;
+	height: 8px;
+	top: 7px;
+	left: 6px;
+	transition-delay: 0.1s; -webkit-transition-delay: 0.1s; -moz-transition-delay: 0.1s;
+}
+/* checkbox 4 disable */
+.checkbox-4.disable input[type="checkbox"] ~ label { border: 1px solid #FECD5F; }
+.checkbox-4.disable input[type="checkbox"]:checked ~ label { border: 2px solid #FECD5F; }
+.checkbox-4.disable input[type="checkbox"]:checked ~ label:after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 16px;
+	height: 8px;
+	top: 10px;
+	left: 1px;
+	background-color: #FECD5F;
+	transform:rotate(45deg); -webkit-transform:rotate(45deg);
+}
+.checkbox-4.disable input[type="checkbox"]:checked ~ label:before {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 24px;
+	height: 8px;
+	top: 7px;
+	left: 6px;
+	background-color: #FECD5F;
+	transform:rotate(-45deg); -webkit-transform:rotate(-45deg);
+}
+/* ---- */
+
+.check-text {
+    float: left;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 0.5em;
+}
+
+
+.disable label { cursor: not-allowed; }

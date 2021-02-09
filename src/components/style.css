@@ -1,0 +1,19 @@
+.MuiFab-primary {
+    color: #353a40 !important;
+    background: transparent !important;
+}
+
+.MuiFab-primary:hover {
+    color: #FFF !important;
+    background: #353a40 !important;
+}
+
+.button {
+    outline: 0 !important;
+}
+
+button:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
